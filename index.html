@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student App - List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="nav">
+    <h1>🎓 STUDENT CONTACT APP</h1>
+    <button onclick="window.location.href='form.html'">➕ Add Student</button>
+  </div>
+
+  <div class="search-sort">
+    <input type="text" id="search" placeholder="Search by name..." onkeyup="searchStudent()">
+    <select id="sort" onchange="sortStudents()">
+      <option value="asc">Sort A → Z</option>
+      <option value="desc">Sort Z → A</option>
+    </select>
+  </div>
+
+  <div class="table-container">
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>Banner ID</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

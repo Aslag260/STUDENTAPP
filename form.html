@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Student</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2 id="formTitle">Add Student</h2>
+    <form id="studentForm" onsubmit="saveStudent(event)">
+      <label>First Name</label>
+      <input type="text" id="firstName" required>
+
+      <label>Last Name</label>
+      <input type="text" id="lastName" required>
+
+      <label>Phone Number</label>
+      <input type="text" id="phone" required>
+
+      <label>Email</label>
+      <input type="email" id="email" required>
+
+      <label>Banner ID</label>
+      <input type="text" id="bannerID" required>
+
+      <button type="submit">Add</button>
+      <button type="button" onclick="cancel()">Cancel</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
